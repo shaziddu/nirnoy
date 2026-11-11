@@ -12,7 +12,7 @@ services:
     plan: free
     region: singapore
     buildCommand: "bash ./bin/render-compile.sh"
-    startCommand: "python manage.py migrate --noinput && python manage.py checkpreferences && npm run render-serve"
+    startCommand: "bash ./bin/render-start.sh"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -32,6 +32,8 @@ services:
         generateValue: true
       - key: PYTHON_VERSION
         value: "3.11.9"
+      - key: MALLOC_ARENA_MAX
+        value: "2"
       - key: WEB_CONCURRENCY
         value: 4
       - key: TAB_DIRECTOR_EMAIL
