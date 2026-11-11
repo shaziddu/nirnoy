@@ -6,7 +6,7 @@ Version 0.1 is [Tabbycat](https://github.com/TabbycatDebate/tabbycat) 2.12.1 wit
 
 ## Launch a site
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/__ORG__/nirnoy/tree/main)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/shazid88/-Nirnoy/tree/main)
 
 1. Log in to Heroku (a card with international payments enabled has to be on the account).
 2. Click the button above. Pick an app name, choose the **Europe** region (closer to Bangladesh than the US), and leave `TIME_ZONE` as `Asia/Dhaka`.
@@ -16,7 +16,7 @@ Version 0.1 is [Tabbycat](https://github.com/TabbycatDebate/tabbycat) 2.12.1 wit
 Cost on Heroku with the defaults here is roughly US$0.75 per day while the app exists (two Basic dynos, Postgres Essential-0, Key-Value Mini). Deleting the app stops all charges. Download the tournament archive first (Setup → Export Tournament).
 
 A Render blueprint is also included (free plan, Singapore region):
-[Deploy to Render](https://render.com/deploy?repo=https://github.com/__ORG__/nirnoy). Tabbycat's own documentation calls Render support beta, the free web service sleeps after 15 minutes without traffic, and Render deletes free databases after 30 days.
+[Deploy to Render](https://render.com/deploy?repo=https://github.com/shazid88/-Nirnoy). Tabbycat's own documentation calls Render support beta, the free web service sleeps after 15 minutes without traffic, and Render deletes free databases after 30 days.
 
 ## Using it
 

@@ -1,7 +1,7 @@
 {
   "name": "DUDS NIRNOY",
   "description": "Tabulation system of the Dhaka University Debating Society (DUDS), built on Tabbycat",
-  "repository": "https://github.com/__ORG__/nirnoy",
+  "repository": "https://github.com/shazid88/-Nirnoy",
   "keywords": [
     "debate",
     "debating",
@@ -9,8 +9,8 @@
     "duds",
     "bangladesh"
   ],
-  "website": "https://github.com/__ORG__/nirnoy",
-  "logo": "https://raw.githubusercontent.com/__ORG__/nirnoy/main/tabbycat/static/logo-48x48.png",
+  "website": "https://github.com/shazid88/-Nirnoy",
+  "logo": "https://raw.githubusercontent.com/shazid88/-Nirnoy/main/tabbycat/static/logo-48x48.png",
   "addons": [
     "rediscloud:30",
     "heroku-postgresql:essential-0",
