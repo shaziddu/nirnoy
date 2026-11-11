@@ -11,8 +11,8 @@ services:
     env: python
     plan: free
     region: singapore
-    buildCommand: "./bin/render-compile.sh"
-    startCommand: "npm run render-serve"
+    buildCommand: "bash ./bin/render-compile.sh"
+    startCommand: "python manage.py migrate --noinput && python manage.py checkpreferences && npm run render-serve"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -31,7 +31,7 @@ services:
       - key: DJANGO_SECRET_KEY
         generateValue: true
       - key: PYTHON_VERSION
-        value: "3.12.3"
+        value: "3.11.9"
       - key: WEB_CONCURRENCY
         value: 4
       - key: TAB_DIRECTOR_EMAIL
