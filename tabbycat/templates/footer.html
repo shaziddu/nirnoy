@@ -11,14 +11,14 @@
       <div class="col-lg-6 col-md-5">
         <h6 class="d-inline-block">
           {% if tournament and tabbycat_codename %}
-            {% blocktrans trimmed %}{{ tournament }} runs on Tabbycat {{ tabbycat_version }} ({{ tabbycat_codename }}) {% endblocktrans %}
+            {% blocktrans trimmed %}{{ tournament }} runs on DUDS NIRNOY 0.1, built on Tabbycat {{ tabbycat_version }} ({{ tabbycat_codename }}){% endblocktrans %}
           {% else %}
-            {% blocktrans trimmed %}This site runs on Tabbycat {{ tabbycat_version }} ({{ tabbycat_codename }}) {% endblocktrans %}
+            {% blocktrans trimmed %}This site runs on DUDS NIRNOY 0.1, built on Tabbycat {{ tabbycat_version }} ({{ tabbycat_codename }}){% endblocktrans %}
           {% endif %}
         </h6>
         <p class="text-muted">
           {% blocktrans trimmed %}
-            Tabbycat is an open-source project developed by volunteers and is free to use.
+            DUDS NIRNOY is the tabulation system of the Dhaka University Debating Society (DUDS). It is built on Tabbycat, an open-source project developed by volunteers, and is released under the GNU AGPL v3.
           {% endblocktrans %}
           {% if tournament and tournament.billable_teams > 0 %}
             {% blocktrans trimmed with amount=tournament.billable_teams %}
@@ -47,7 +47,7 @@
       </div>
 
       <div class="col-lg-2 col-md-3 mt-2 mt-md-0">
-        <h6 class="d-inline-block">{% blocktrans trimmed %}Our Organisation{% endblocktrans %}</h6>
+        <h6 class="d-inline-block">{% blocktrans trimmed %}About Tabbycat{% endblocktrans %}</h6>
         <p class="text-muted">
           {% blocktrans trimmed %}
             Tabbycat is supported by the <a href="https://tabbycat-debate.org/">Tabbycat Debate Association</a>, a non-profit for advancing open debate technology.
@@ -68,8 +68,8 @@
           </li>
           <li class="nav-item p-2">
             <i data-feather="github"></i>
-            <a class="nav-link p-0 d-inline-block" href="https://github.com/TabbycatDebate/tabbycat/">
-              {% trans "GitHub" %}
+            <a class="nav-link p-0 d-inline-block" href="https://github.com/__ORG__/nirnoy">
+              {% trans "Source code" %}
             </a>
           </li>
           <li class="nav-item p-2">
@@ -85,14 +85,14 @@
             </a>
           </li>
           <li class="nav-item p-2">
-            <i data-feather="facebook"></i>
-            <a class="nav-link p-0 d-inline-block" href="https://www.facebook.com/TabbycatDebate/">
-              {% trans "Facebook" %}
+            <i data-feather="home"></i>
+            <a class="nav-link p-0 d-inline-block" href="https://duds.du.ac.bd">
+              DUDS
             </a>
           </li>
           <li class="nav-item p-2">
             <i data-feather="upload-cloud"></i>
-            <a class="nav-link p-0 d-inline-block" href="https://github.com/TabbycatDebate/tabbycat#%EF%B8%8F-installation">
+            <a class="nav-link p-0 d-inline-block" href="https://github.com/__ORG__/nirnoy#readme">
               {% trans "Set Up A Copy" %}
             </a>
           </li>

@@ -1,12 +1,17 @@
 {
-  "name": "Tabbycat",
-  "description": "Debating tournament tabulation software for British Parliamentary and a variety of two-team parliamentary formats",
-  "repository": "https://github.com/TabbycatDebate/tabbycat",
-  "keywords": ["debate", "debating"],
-  "website": "https://tabbycat.readthedocs.io/",
-  "logo": "https://raw.githubusercontent.com/TabbycatDebate/tabbycat/develop/tabbycat/static/logo-48x48.png",
+  "name": "DUDS NIRNOY",
+  "description": "Tabulation system of the Dhaka University Debating Society (DUDS), built on Tabbycat",
+  "repository": "https://github.com/__ORG__/nirnoy",
+  "keywords": [
+    "debate",
+    "debating",
+    "tabulation",
+    "duds",
+    "bangladesh"
+  ],
+  "website": "https://github.com/__ORG__/nirnoy",
+  "logo": "https://raw.githubusercontent.com/__ORG__/nirnoy/main/tabbycat/static/logo-48x48.png",
   "addons": [
-    "papertrail",
     "rediscloud:30",
     "heroku-postgresql:essential-0",
     "heroku-redis:mini"
@@ -21,8 +26,8 @@
       "value": ""
     },
     "TIME_ZONE": {
-      "description": "The time zone name in the IANA tz database for the tournament's location. Examples: America/Los_Angeles, Europe/Dublin, Africa/Johannesburg. You can look up yours in the 'TZ*' column at http://wikipedia.org/wiki/List_of_tz_database_time_zones#List",
-      "value": "Australia/Melbourne"
+      "description": "Time zone of the tournament (IANA name). Keep Asia/Dhaka for tournaments in Bangladesh.",
+      "value": "Asia/Dhaka"
     },
     "DISABLE_COLLECTSTATIC": {
       "description": "Leave this as-is.",
@@ -40,17 +45,23 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "eco"
+      "size": "basic"
     },
     "worker": {
       "quantity": 1,
-      "size": "eco"
+      "size": "basic"
     }
   },
   "buildpacks": [
-    { "url": "https://github.com/heroku/heroku-buildpack-nginx.git" },
-    { "url": "heroku/nodejs" },
-    { "url": "heroku/python" }
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nginx.git"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/python"
+    }
   ],
   "stack": "heroku-22",
   "success_url": "/start/"
